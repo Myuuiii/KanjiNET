@@ -2,15 +2,23 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <PackageId>KanjiNET</PackageId>
-    <Version>1.0.2</Version>
-    <Authors>MuteDev</Authors>
-    <Company>SubSilence</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>KanjiNET</PackageId>
+    <Title>KanjiNET</Title>
+    <Version>1.0.3</Version>
+    <Authors>Myuuiii</Authors>
+    <Company>SubSilence</Company>
+    <Description>Simple wrapper for the Japanese kanjiapi.dev Kanji Dictionary API</Description>
+    <PackageIconUrl>icon.png</PackageIconUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Myuuiii/KanjiNET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <None Include="icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>
