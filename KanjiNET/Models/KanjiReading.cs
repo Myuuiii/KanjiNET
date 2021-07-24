@@ -1,15 +1,15 @@
 using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace KanjiNET.Models
 {
     public class KanjiReading
     {
-        [JsonProperty("reading")]
+        [JsonPropertyName("reading")]
         public String Reading { get; set; }
-        [JsonProperty("main_kanji")]
+        [JsonPropertyName("main_kanji")]
         public String[] MainKanji { get; set; }
-        [JsonProperty("name_kanji")]
+        [JsonPropertyName("name_kanji")]
         public String[] NameKanji { get; set; }
     }
 }

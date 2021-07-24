@@ -1,29 +1,29 @@
 using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace KanjiNET.Models
 {
     public class KanjiDefinition
     {
-        [JsonProperty("kanji")]
+        [JsonPropertyName("kanji")]
         public String Kanji { get; set; }
-        [JsonProperty("grade")]
+        [JsonPropertyName("grade")]
         public Int32 Grade { get; set; }
-        [JsonProperty("stroke_count")]
+        [JsonPropertyName("stroke_count")]
         public Int32 StrokeCount { get; set; }
-        [JsonProperty("meanings")]
+        [JsonPropertyName("meanings")]
         public String[] Meanings { get; set; }
-        [JsonProperty("kun_readings")]
+        [JsonPropertyName("kun_readings")]
         public String[] KunReadings { get; set; }
-        [JsonProperty("on_readings")]
+        [JsonPropertyName("on_readings")]
         public String[] OnReadings { get; set; }
-        [JsonProperty("name_readings")]
+        [JsonPropertyName("name_readings")]
         public String[] NameReadings { get; set; }
-        [JsonProperty("jlpt")]
+        [JsonPropertyName("jlpt")]
         public Int32 JlptLevel { get; set; }
-        [JsonProperty("unicode")]
+        [JsonPropertyName("unicode")]
         public String Unicode { get; set; }
-        [JsonProperty("heisig_en")]
+        [JsonPropertyName("heisig_en")]
         public String HeisigEN { get; set; }
     }
 }

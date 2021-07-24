@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Net;
+using System.Text.Json;
 using KanjiNET.Enums;
 using KanjiNET.Models;
-using Newtonsoft.Json;
 
 namespace KanjiNET
 {
-    // <summary>
+    /// <summary>
     /// Kanji API Client used to retrieve definitions
     /// </summary>
     public class KanjiClient
@@ -29,7 +29,7 @@ namespace KanjiNET
 
                 String jsonResponse = webClient.DownloadString(new Uri(BaseUrl + "kanji/" + kanji));
                 KanjiResult<KanjiDefinition> result = new KanjiResult<KanjiDefinition>();
-                result.Data = JsonConvert.DeserializeObject<KanjiDefinition>(jsonResponse);
+                result.Data = JsonSerializer.Deserialize<KanjiDefinition>(jsonResponse);
                 result.Success = true;
                 return result;
             }
@@ -59,7 +59,7 @@ namespace KanjiNET
 
                 String jsonResponse = webClient.DownloadString(new Uri(BaseUrl + "kanji/grade-" + (Int32)grade));
                 KanjiResult<String[]> result = new KanjiResult<String[]>();
-                result.Data = JsonConvert.DeserializeObject<String[]>(jsonResponse);
+                result.Data = JsonSerializer.Deserialize<String[]>(jsonResponse);
                 result.Success = true;
                 return result;
             }
@@ -89,7 +89,7 @@ namespace KanjiNET
 
                 String jsonResponse = webClient.DownloadString(new Uri(BaseUrl + "reading/" + reading));
                 KanjiResult<KanjiReading> result = new KanjiResult<KanjiReading>();
-                result.Data = JsonConvert.DeserializeObject<KanjiReading>(jsonResponse);
+                result.Data = JsonSerializer.Deserialize<KanjiReading>(jsonResponse);
                 result.Success = true;
                 return result;
             }
@@ -120,7 +120,7 @@ namespace KanjiNET
 
                 String jsonResponse = webClient.DownloadString(new Uri(BaseUrl + "words/" + kanji));
                 KanjiResult<KanjiWord[]> result = new KanjiResult<KanjiWord[]>();
-                result.Data = JsonConvert.DeserializeObject<KanjiWord[]>(jsonResponse);
+                result.Data = JsonSerializer.Deserialize<KanjiWord[]>(jsonResponse);
                 result.Success = true;
                 return result;
             }
