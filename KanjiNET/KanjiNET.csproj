@@ -2,11 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <PackageId>KanjiNET</PackageId>
-    <Version>1.0.2</Version>
-    <Authors>MuteDev</Authors>
-    <Company>SubSilence</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>KanjiNET</Title>
+    <PackageId>KanjiNET</PackageId>
+    <Version>1.0.4</Version>
+    <Authors>Myuuiii</Authors>
+    <Company>SubSilence</Company>
+    <Description>API Wrapper for the kanjiapi.dev API (v1)</Description>
+    <PackageIconUrl>icon.png</PackageIconUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Myuuiii/KanjiNET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
 </Project>

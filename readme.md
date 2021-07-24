@@ -1,14 +1,25 @@
-# KanjiNET
-API Wrapper for the kanjiapi.dev API (v1)
+<div align="center">
 
-This wrapper makes it easy to get the definition of a kanji character and or find words that make use of it
- [kanjiapi.dev](https://kanjiapi.dev/) 
+![KanjiNET](http://cdn.mutedevs.nl/nuget/KanjiNET/iconSmall.png)
+
+# KanjiNET
+<hr />
+
+### API Wrapper for the Jisho API (v1)
+![Nuget Downloads](https://img.shields.io/nuget/dt/KanjiNET?color=56D926&label=KanjiNET%20Downloads)
+![GitHub Open Issues](https://img.shields.io/github/issues-raw/Myuuiii/KanjiNET)
+![GitHUb Latest Version](https://img.shields.io/github/v/release/Myuuiii/KanjiNET?label=Latest%20Release)
+</div>
+
+
+
+This wrapper makes it easy to get the definition of a kanji character and or find words that make use of it [kanjiapi.dev](https://kanjiapi.dev)
 
 <br>
 
 # Downloads
-
-[NuGet Package](https://www.nuget.org/packages/KanjiNET/)
+**Stable builds can be found here**:
+[NuGet](https://www.nuget.org/packages/KanjiNET/)
 
 <br>
 
