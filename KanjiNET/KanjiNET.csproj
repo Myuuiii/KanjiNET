@@ -8,7 +8,7 @@
     <Version>1.0.4</Version>
     <Authors>Myuuiii</Authors>
     <Company>SubSilence</Company>
-    <Description>API Wrapper for the kanjiapi.dev API (v1)</Description>
+    <Description>Simple wrapper for the Japanese kanjiapi.dev Kanji Dictionary API</Description>
     <PackageIconUrl>icon.png</PackageIconUrl>
     <PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/Myuuiii/KanjiNET</RepositoryUrl>
